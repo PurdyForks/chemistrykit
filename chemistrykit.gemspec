@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.name          = 'chemistrykit'
   s.version       = '3.10.1'
   s.platform      = Gem::Platform::RUBY
-  s.authors       = ['Dave Haeffner', 'Jason Fox']
-  s.email         = ['dave@arrgyle.com', 'jason@arrgyle.com']
-  s.homepage      = 'https://github.com/arrgyle/chemistrykit'
+  s.authors       = ['Dave Haeffner', 'Jason Fox', 'Joe Purdy']
+  s.email         = ['dave@arrgyle.com', 'jason@arrgyle.com', 'joe@poweredbypurdy.com']
+  s.homepage      = 'https://github.com/joepurdy/chemistrykit'
   s.summary       = 'A simple and opinionated web testing framework for Selenium that follows convention over configuration.'
   s.description   = 'Merged various pull requests including subfolders in beaker directory'
   s.license       = 'MIT'
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'thor', '~> 0.17.0'
   s.add_dependency 'rspec', '~> 2.14.1'
   s.add_dependency 'builder', '~> 3.2.2'
-  s.add_dependency 'selenium-webdriver', '~> 2.41.0'
+  s.add_dependency 'selenium-webdriver', '~> 2.48.1'
   s.add_dependency 'rest-client', '~> 1.6.7'
   s.add_dependency 'selenium-connect', '~> 3.7.1'
   s.add_dependency 'parallel_tests', '~> 0.15.0'
