@@ -8,7 +8,6 @@ class Formula < ChemistryKit::Formula::Base
 
 	def initialize(driver)
     @driver = driver
-    driver.manage.window.resize_to(1260, 1190)
   end
 
   def visit(url='/')
