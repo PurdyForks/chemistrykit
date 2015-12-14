@@ -4,7 +4,6 @@ require 'bundler/gem_tasks'
 require 'cucumber'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
-require 'rubocop/rake_task'
 require 'flog_task'
 require 'flay_task'
 require 'reek/rake/task'
@@ -18,7 +17,7 @@ desc 'Runs full build activities.'
 task build_full: [:clean, :prepare, :quality, :unit, :integration, :system]
 
 desc 'Runs quality checks.'
-task quality: [:rubocop, :reek, :flog_total, :flog_average, :flay]
+task quality: [:reek, :flog_total, :flog_average, :flay]
 
 desc 'Removes the build directory.'
 task :clean do
@@ -46,8 +45,6 @@ RSpec::Core::RakeTask.new(:integration) do |t|
 end
 
 Cucumber::Rake::Task.new(:system)
-
-Rubocop::RakeTask.new
 
 # TODO: lower the quality score and improve the code!
 FlogTask.new :flog_total, 10000 do |t|
