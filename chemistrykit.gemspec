@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'chemistrykit'
-  s.version       = '3.10.1'
+  s.version       = '3.10.1-devel'
   s.platform      = Gem::Platform::RUBY
   s.authors       = ['Dave Haeffner', 'Jason Fox', 'Joe Purdy']
   s.email         = ['dave@arrgyle.com', 'jason@arrgyle.com', 'joe@poweredbypurdy.com']
