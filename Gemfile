@@ -17,8 +17,9 @@ gem 'guard-reek'
 gem 'guard-rspec'
 gem 'guard-rubocop'
 gem 'selenium-client', '~> 1.2.18'
+gem 'selenium-connect', git: 'https://github.com/joepurdy/selenium-connect.git', branch: 'develop'
 gem 'compass'
 gem 'zurb-foundation'
 
 # for simpler local development
-#gem 'selenium-connect', :path => '~/Dropbox/_dev/chemistrykit/selenium-connect', :branch => 'develop'
+#gem 'selenium-connect', :path => '~/workingDir/selenium-connect', branch: 'develop'
